@@ -1,7 +1,7 @@
 # pfsense_zfs_check
 Health check script for pfSense on ZFS.
 
-This job will check all ZFS pools to confirm health state of them, and check if usage of the pool has not reached configurable value (default 50%)
+This job will check all ZFS pools to confirm health state of them, trigger a scrub of the pool, and check if usage of the pool has not reached configurable value (default 50%)
 
 # Config file 
 By default the script will produce a warning when drive space is at 50% or greater.  If you want to change this modify the following line
