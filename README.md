@@ -5,12 +5,14 @@ This job will check all ZFS pools to confirm health state of them, and check if 
 
 # Config file 
 By default the script will produce a warning when drive space is at 50% or greater.  If you want to change this modify the following line
+
 max_capacity=50
 
 # Usage
 Setup a cron job under pfSense GUI: Services -> Cron -> Settings
 
 Here is an example for a weekly job run
+
 0 	0 	* 	* 	* 	root 	/root/pfsense_zfs_check.sh
 
 # Requirements
