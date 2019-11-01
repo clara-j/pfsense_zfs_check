@@ -13,7 +13,7 @@ Setup a cron job under pfSense GUI: Services -> Cron -> Settings
 
 Here is an example for a weekly job run
 
-0 	0 	* 	* 	* 	root 	/root/pfsense_zfs_check.sh
+0 	0 	* 	* 	0 	root 	/root/pfsense_zfs_check.sh
 
 # Requirements
 * pfSense
