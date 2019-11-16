@@ -37,7 +37,7 @@ if [ "$pool_status" = "$healthy_state"  ]; then
     zpool list -H |  while read line; do
         pool=`echo "$line" | cut -f1`
         echo "Triggering scrub for: $pool"
-        #zpool scrub "$pool"
+        zpool scrub "$pool"
     done
 
 else
