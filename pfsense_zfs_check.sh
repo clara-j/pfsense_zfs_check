@@ -64,6 +64,6 @@ fi
         echo "Drive capacity greater than max"
         echo "Drive capacity at: ${capacity}%"| /usr/local/bin/php /usr/local/bin/mail.php -s"`hostname`: pfSense zpool warning - Capacity reached"
     else
-        echo "Drive capcity below max"
+        echo "Drive capacity below max"
     fi
 done
